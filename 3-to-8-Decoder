@@ -1,0 +1,15 @@
+//by: Jeremy Lapane
+//Oct 30, 2019
+//EE-543, Graduate HDL & Verilog
+//Homework 4, Q2, for Dr. Na Gong
+//16-Bit Full Adder, in dataflow modeling
+
+/*The following is dataflow design modeling of a 3 to 8 decoder, using powers of 2. */
+
+module Threeto8Decoder (A, D);
+//Port Declaration
+input [2:0] A; //set input A as 3-bit bus wire
+output [7:0] D; //set output D as 8-bit bus wire
+assign D = 2**A; //assign the value 2^A to D, i.e. if A is 3, D is 8.  
+
+endmodule
