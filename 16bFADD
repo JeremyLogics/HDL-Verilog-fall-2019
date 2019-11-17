@@ -1,0 +1,21 @@
+//by: Jeremy Lapane
+//Oct 30, 2019
+//EE-543, Graduate HDL & Verilog
+//Homework 4, for Dr. Na Gong
+//16-Bit Full Adder, in dataflow modeling
+
+/*In this full-adder, the Carry in (Cin) is added to A + B directly, then that value is assigned to an internal 17-bit wire, 
+with the MSB being assigned to Carry Out (Cout) and bit 15-0 being assigned to the sum output (sum)*/
+
+module FADD (A, B, sum, Cin, Cout);
+//Port Declaration
+input [15:0] A, B; //operands input
+input Cin; //carry in port
+output Cout; //carry out port
+output [15:0] sum; //summation output 
+wire [16:0] IntraSum; //internal value to hold sum of A + B, with pin 16 being the Carry Out in this module
+assign IntraSum = A + B + Cin; //add A + B + Cin to InraSum, a 16 bit wire
+assign Cout = IntraSum [16]; // output bit 16 of IntraSum as Carry Out
+assign sum = IntraSum [15:0]; //output bits 15 through 0 as the sum
+
+endmodule
