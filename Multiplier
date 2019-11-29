@@ -107,9 +107,9 @@ and (internaly[6], inputa[2], inputb[2]); //1
 and (internaly[7], inputa[3], inputb[2]); //1
 
 FADD1 B1 (internaly[0],internaly[4], Output_P_eq_ab[2], 1'b0, carry[3]); //1
-FADD1 B2 (internaly[1],internaly[5], internalz[0],      carry[3],     carry[4]); //1
-FADD1 B3 (internaly[2],internaly[6], internalz[1],      carry[4],     carry[5]); //1
-FADD1 B4 (internaly[3],internaly[7], internalz[2],      carry[5],     internalz[3]); //1
+FADD1 B2 (internaly[1],internaly[5], internalz[0], carry[3],     carry[4]); //1
+FADD1 B3 (internaly[2],internaly[6], internalz[1], carry[4],     carry[5]); //1
+FADD1 B4 (internaly[3],internaly[7], internalz[2], carry[5],     internalz[3]); //1
 
 //group2 and+FADD
 and (internalz[4], inputa[0], inputb[3]); //2
@@ -118,9 +118,9 @@ and (internalz[6], inputa[2], inputb[3]); //2
 and (internalz[7], inputa[3], inputb[3]); //2
 
 FADD1 C1 (internalz[0],internalz[4], Output_P_eq_ab[3], 1'b0, carry[6]); //2
-FADD1 C2 (internalz[1],internalz[5], Output_P_eq_ab[4], carry[6],     carry[7]); //2
-FADD1 C3 (internalz[2],internalz[6], Output_P_eq_ab[5], carry[7],     carry[8]); //2
-FADD1 C4 (internalz[3],internalz[7], Output_P_eq_ab[6], carry[8],     Output_P_eq_ab[7]);  //2
+FADD1 C2 (internalz[1],internalz[5], Output_P_eq_ab[4], carry[6], carry[7]); //2
+FADD1 C3 (internalz[2],internalz[6], Output_P_eq_ab[5], carry[7], carry[8]); //2
+FADD1 C4 (internalz[3],internalz[7], Output_P_eq_ab[6], carry[8], Output_P_eq_ab[7]);  //2
 
 
 
