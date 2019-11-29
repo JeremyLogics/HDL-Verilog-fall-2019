@@ -96,9 +96,9 @@ and (internalx[6], inputa[2], inputb[1]); //0
 and (internalx[7], inputa[3], inputb[1]); //0
 
 FADD1 A1 (internalx[0],internalx[4], Output_P_eq_ab[1], 1'b0,     carry[0]); //0
-FADD1 A2 (internalx[1],internalx[5], internaly[0],      carry[0], carry[1]); //0
-FADD1 A3 (internalx[2],internalx[6], internaly[1],      carry[1], carry[2]); //0
-FADD1 A4 (internalx[3],internalx[7], internaly[2],      carry[2], internaly[3]); //0
+FADD1 A2 (internalx[1],internalx[5], internaly[0], carry[0], carry[1]); //0
+FADD1 A3 (internalx[2],internalx[6], internaly[1], carry[1], carry[2]); //0
+FADD1 A4 (internalx[3],internalx[7], internaly[2], carry[2], internaly[3]); //0
 
 //group1 and+FADD 
 and (internaly[4], inputa[0], inputb[2]); //1
