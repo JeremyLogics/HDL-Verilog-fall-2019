@@ -22,3 +22,9 @@ https://ocw.mit.edu/courses/ & https://ocw.mit.edu/courses/electrical-engineerin
 
 https://web.stanford.edu/class/ee183/handouts/
 
+https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/hb/qts/qts_qii51013.pdf
+
+https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/hb/qts/ug_tq_tutorial.pdf
+
+https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/hb/qts/qts_qii52005.pdf
+
