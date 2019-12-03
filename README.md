@@ -28,3 +28,7 @@ https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/hb/qts/
 
 https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/hb/qts/qts_qii52005.pdf
 
+https://www.systemverilog.io/
+
+https://hdlbits.01xz.net/wiki/Main_Page
+
